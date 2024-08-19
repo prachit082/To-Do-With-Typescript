@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "rm -rf dist && rm -rf .cache && npx parcel src/index.html --no-cache --no-source-maps",
-    "build": "rm -rf build && rm -rf .cache && npx parcel build src/index.html --no-cache --no-source-maps --out-dir build/",
+    "build": "rm -rf build && rm -rf .cache && npx parcel build src/index.html --no-cache --no-source-maps --dist-dir build/",
     "reset": "rm -rf build && rm -rf .cache && rm -rf dist && rm -rf node_modules"
   },
   "keywords": [],
@@ -32,6 +32,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/g-codehub/typescript-base-app.git"
+    "url": "git://github.com/prachit082/To-Do-With-Typescript.git"
   }
 }
