@@ -2,7 +2,6 @@
   "name": "app",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "rm -rf dist && rm -rf .cache && npx parcel src/index.html --no-cache --no-source-maps",
@@ -27,6 +26,7 @@
     "typescript": "^3.8.3"
   },
   "dependencies": {
+    "@swc/helpers": "^0.5.12",
     "autoprefixer": "^9.7.6",
     "postcss": "^8.4.41"
   },
