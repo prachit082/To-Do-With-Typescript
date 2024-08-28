@@ -184,7 +184,7 @@ export default class TaskController {
     try {
       const checkMessage = `Your action has been executed! A task was ${
         itemData.status ? '' : 'un'
-      }checked done successfully.`;
+      }completed successfully.`;
       this.storage.setItem(CONSTANTS.DATABASES.TASKS, JSON.stringify(this.tasks));
       this.displayTasks(this.tasks);
       this.getCurrentFilter();
@@ -217,7 +217,7 @@ export default class TaskController {
     try {
       const markAsDoneMessage = `Your action has been executed! All of the tasks are ${
         this.asDoneStatus ? '' : 'un'
-      }checked as completed`;
+      }marked as completed`;
       this.storage.setItem(CONSTANTS.DATABASES.TASKS, JSON.stringify(this.tasks));
       this.displayTasks(this.tasks);
       this.getCurrentFilter();
